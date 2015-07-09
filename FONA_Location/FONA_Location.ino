@@ -16,7 +16,7 @@
 #define FONA_KEY 6 //connection to FONA KEY
 #define FONA_PS 7 //connect to FONA PS
 
-String APN = "__PUT YOUR APN HERE!!__"; //Set APN for Mobile Service
+String APN = "a"; //Set APN for Mobile Service
 
 SoftwareSerial fonaSS = SoftwareSerial(FONA_TX, FONA_RX); //initialize software serial
 String response; //global variable for pulling AT command responses from inside functions (there has to be a better way to do this)
@@ -25,8 +25,8 @@ unsigned long ATtimeOut = 10000; // How long we will give an AT command to comep
 int SLEEP_MINUTES = 5; //Sleep time
 
 //Sparkfun URL Building
-const String publicKey = "__PUT YOUR PUBLIC KEY HERE__"; //Public Key for data stream
-const String privateKey = "__PUT YOUR PRIVATE KEY HERE__"; //Private Key for data stream
+const String publicKey = "zDgmv4Ew70f8wGO8gnl9"; //Public Key for data stream
+const String privateKey = "Yy1PdVqWm6SjZ5ajA2Gr"; //Private Key for data stream
 const byte NUM_FIELDS = 4; //number of fields in data stream
 const String fieldNames[NUM_FIELDS] = {"latitude", "longitude", "date", "time"}; //actual data fields
 String fieldData[NUM_FIELDS]; //holder for the data values
